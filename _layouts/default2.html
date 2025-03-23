@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhMyZaan2</title>
+</head>
+<body>
+    
+    {% assign nilai = 100 %}
+
+    {% if nilai >= 90 and nilai == 100 %}
+        <p>Nilai A, Mijan GG!</p>
+    {% elsif nilai >= 75 and nilai < 90 %}
+        <p>Nilai B, bagus tapi bisa lebih baik!</p>
+    {% elsif nilai >= 50 and nilai < 75 %}
+        <p>Nilai C, ayo semangat belajar lagi!</p>
+    {% else %}
+        <p>Nilai D, waktunya belajar lebih keras!</p>
+    {% endif %}
+
+    {% assign makanan = "Nasi Goreng, Sate, Ramen" | split: ", " %}
+    <ol>
+        {% for item in makanan %}
+        <li> {{ item }} </li>
+        {% endfor %}
+    </ol>
+
+</body>
+</html>
