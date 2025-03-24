@@ -1,0 +1,12 @@
+- link: /
+  name: Home
+- link: biodata.html
+  name: Profil
+- link: contact.html
+  name: My-Contact
+- link: blog.html
+  name: My-Diary
+- link: /mail.html
+  name: Contact-Me
+- link: /portofolio.html
+  name: Portofoliow-Gueks

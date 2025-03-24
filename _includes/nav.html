@@ -1,0 +1,9 @@
+<center>
+<nav>
+    {% for item in site.data.nav %}
+        <a href="{{ item.link }}" style="text-decoration: none;">
+            {{ item.name }}
+        </a>
+    {% endfor %}
+</nav>
+</center>

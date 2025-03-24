@@ -7,10 +7,14 @@
 </head>
 <body>
     <header>
-        <h1>🌟 {{ site.title }} 🌟</h1>
+        {% include nav.html %}
+    </header>
+    <header>
+        {% include header.html %}
     </header>
     <main>
         {{ content }}
     </main>
+    {% include footer.html %}
 </body>
 </html>

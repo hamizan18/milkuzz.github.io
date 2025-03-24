@@ -1,0 +1,16 @@
+---
+layout: main
+title: My Portofolio
+---
+
+<h3>Portofolio Saya:</h3>
+
+<ul>
+    {% for item in site.data.portofolio %}
+    <li>
+        <strong> {{ item.nama }} </strong> - {{ item.desk }}
+        <br>
+        <a href="{{ item.link }}" target="_blank">Cek Proyek</a></li>
+        <br>
+    {% endfor %}
+</ul>
